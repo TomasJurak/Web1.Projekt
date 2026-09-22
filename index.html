@@ -1,55 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Můj Projekt - Domů</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tom-select@2.4.1/dist/css/tom-select.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/morph/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    
+
+
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html">KlavesniceCZ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home
-            <span class="visually-hidden">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Domů</a></li>
+        <li class="nav-item"><a class="nav-link" href="stranka2.html">Postup</a></li>
+        <li class="nav-item"><a class="nav-link" href="stranka3.html">Kontakt</a></li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container mt-5">
+
+    
+    <section class="mb-5">
+        <h2>Galerie projektu</h2>
+        <div id="mujCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="Obrazky/klavesnice (1).jpg" class="d-block w-100" alt="Fotka 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Obrazky/klavesnice2 (1).jpg" class="d-block w-100" alt="Fotka 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Obrazky/KLAVESNICE3 (1).jpg" class="d-block w-100" alt="Fotka 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="Obrazky/klavesnice4 (1).jpg" class="d-block w-100" alt="Fotka 4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mujCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mujCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    
+    <section class="mb-5">
+        <h2>Nastavení preferencí (Multiple Select)</h2>
+        <form>
+            <div class="mb-3">
+                <label for="zajmy" class="form-label">Vyberte oblasti vašeho zájmu (povinný výběr):</label>
+                <select id="zajmy" name="zajmy[]" class="form-control" multiple required>
+                    <option value="" disabled selected>vyberte...</option>
+                    <option value="web">Gejming </option>
+                    <option value="backend">Kancelářská</option>
+                    <option value="grafika">Membránová</option>
+                    <option value="marketing">Mechanická</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Uložit preference</button>
+        </form>
+    </section>
+
+</div>
+
+<div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Membránové</h5>
+                        <p class="card-text">Membránové tiché a levné.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanická</h5>
+                        <p class="card-text">Mechanické jsou odolné a někdy hlasité.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bezdrátová</h5>
+                        <p class="card-text">Bezdrátové nabízí volnost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <p>&copy; 2026 Můj Projekt. Všechna práva vyhrazena.</p>
+        <p><a href="dokumentace.pdf" class="text-info text-decoration-none" target="_blank"><i class="fas fa-file-pdf"></i> Zobrazit dokumentaci (PDF)</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tom-select@2.4.1/dist/js/tom-select.complete.min.js"></script>
+<script>
+    new TomSelect("#zajmy", {
+        maxItems: 5,
+        placeholder: "Klikněte pro výběr..."
+    });
+</script>
+
 </body>
 </html>
